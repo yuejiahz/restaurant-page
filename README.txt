@@ -1,2 +1,2 @@
-View the preview here :)
-https://yuejiahz.github.io/restaurant-page/
+
+<a href="https://yuejiahz.github.io/restaurant-page/">View demo here</a?
