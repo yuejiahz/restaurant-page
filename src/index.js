@@ -7,8 +7,7 @@ document.body.style.margin = '0';
 document.body.style.display = 'block';
 document.body.style.backgroundColor = '#F4E7D3';
 
-//create image banner and change banner for different tabcd restaurant-page
-
+//create image banner and change banner for different tab restaurant-page
 function imageBanner(tabSelection){
     const banner = document.createElement('img');
     banner.classList.add('banner');
