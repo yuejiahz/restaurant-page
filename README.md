@@ -7,10 +7,11 @@ Built from html, css and javascript.
 Tool used: 
 
 webpack
-    dependencies:
-    webpack, webpack-cli, css-loader, style-loader. 
 
-    modules:
-    css-loader, style-loader, asset module for loading image.
+dependencies:
+webpack, webpack-cli, css-loader, style-loader. 
+
+modules:
+css-loader, style-loader, asset module for loading image.
 
 
