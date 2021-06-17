@@ -7,23 +7,22 @@ const info = () => {
   const hours = document.createElement("p");
   const location = document.createElement("p");
 
+  infoContainer.classList.add('info-container');
+   header.classList.add('class-list');
+   content.classList.add('content');
+   content.id='content';
+   hours.classList.add('hours');
+   location.classList.add('location');
+
+   header.classList.add('info-list');
+   content.classList.add('info-list');
+   hours.classList.add('info-list');
+   location.classList.add('info-list');
+
   infoContainer.appendChild(header);
   infoContainer.appendChild(content);
   infoContainer.appendChild(hours);
   infoContainer.appendChild(location);
-
-  header.style.fontFamily=`"Monaco", "Lucida Console", monospace`;
-  header.style.textAlign = "center";
-  header.style.lineHeight='1.5em';
-
-  const infoList=infoContainer.childNodes;
-  for(var i=1;i<infoList.length;i++){
-   infoList[i].style.fontFamily=`"Monaco", "Lucida Console", monospace`;
-   infoList[i].style.textAlign = "justify";
-   infoList[i].style.lineHeight='1.5em';
-   infoList[i].style.margin='30px auto auto auto';
-   infoList[i].style.width='35em';
-  }
 
   header.textContent='OISHI JAPANESE RESTAURANT';
   content.textContent=  `OISHI JAPANESE RESTAURANT is one of our favourite Japanese restaurants in town,

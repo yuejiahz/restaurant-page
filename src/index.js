@@ -1,20 +1,15 @@
-import { menuContent} from './tab-menu.js'
-import { info } from './tab-info.js'
-import { contact } from './tab-contact.js'
+import { menuContent} from './tab-menu.js';
+import { info } from './tab-info.js';
+import { contact } from './tab-contact.js';
+import './style.css';
 
-//set DOM style of body
-document.body.style.margin = '0';
-document.body.style.display = 'block';
-document.body.style.backgroundColor = '#F4E7D3';
+
 
 //create image banner and change banner for different tab restaurant-page
 function imageBanner(tabSelection){
     const banner = document.createElement('img');
     banner.classList.add('banner');
-    banner.style.width = "100%";
-    banner.style.height = "250px";
-    banner.style.objectFit = "cover";
-    
+  
     if(tabSelection=='info'||!tabSelection){
         banner.src = './img/japrestout.jpg';
         banner.alt = 'japanese-restaurant-exterior';
@@ -32,29 +27,22 @@ const tabInfo = document.createElement('div');
 const tabMenu = document.createElement('div');
 const tabContact = document.createElement('div');
 
+navBar.classList.add('nav-bar');
+tabInfo.classList.add('tab-info');
+tabMenu.classList.add('tab-menu');
+tabContact.classList.add('tab-contact');
+
 navBar.appendChild(tabInfo);
 navBar.appendChild(tabMenu);
 navBar.appendChild(tabContact);
-
-navBar.style.margin = '30px auto auto auto';
-navBar.style.display = 'block';
-navBar.style.width = '312px';
 
 tabInfo.textContent = "Info";
 tabMenu.textContent = "Menu";
 tabContact.textContent = "Contact";
 
-const tabs = navBar.childNodes;
-for (var i = 0; i < tabs.length; i++) {
-    tabs[i].style.display = 'inline-block';
-    tabs[i].style.backgroundColor = "white";
-    tabs[i].style.textAlign = "center";
-    tabs[i].style.width = "80px";
-    tabs[i].style.padding = "10px";
-    tabs[i].style.border = "solid 2px";
-    tabs[i].style.position='relative';
-    tabs[i].style.zIndex='1';
-    tabs[i].style.fontFamily = `"Monaco", "Lucida Console", monospace`;
+const navItem = navBar.childNodes;
+for (var i = 0; i < navItem.length; i++) {
+    navItem[i].classList.add('nav-item');
 };
 
 //create footer

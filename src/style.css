@@ -1,0 +1,90 @@
+*{
+    font-family:"Monaco", "Lucida Console", monospace;
+    text-align: center;
+}
+.banner{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+body{
+    margin : 0;
+    display : block;
+    background-color : #F4E7D3;
+}
+.menu{
+   text-align:'center';
+    line-height:'1.5em';
+    margin:'0.8em';
+}
+.nav-bar{
+    margin:30px auto auto auto;
+    display:block;
+    width:312px;
+}
+
+.nav-item{
+    display:inline-block;
+    background-color: white;
+    width: 80px;
+    padding:10px;
+    border:solid 2px;
+    position:relative;
+    z-index: 1;
+}
+.food-image{
+    display: inline;
+    width:14rem;
+    height:12rem;
+    border-radius: 6px;
+}
+.menu-container{
+    margin:auto;
+    line-height:1.2rem;
+}
+
+.description{
+    width:9rem;
+    padding:1rem 1rem 1rem 3.5rem;
+}
+.price{
+    width:3rem;
+    line-height:1rem;
+    padding:1rem;
+
+}
+.price,.description{
+    margin:auto;
+    font-size: 1.2rem;
+}
+.food-list{
+    width:35rem;
+    margin:auto;
+    display: flex;
+    padding: 1rem;
+    background-color: beige;
+    border: solid;
+    border-radius: solid 10px;
+}
+.contact-container{
+    margin:40px auto;
+    background-color: white;
+    border-radius: 5px;
+    padding:10px;
+    width:35rem;
+}
+.header{
+    line-height: 1.5rem;
+}
+.info-list{
+    text-align: justify;
+    line-height: 1.5rem;
+    margin:30px auto;
+    width:35rem;
+}
+#content{
+    text-align: justify;
+}
+
+
+
